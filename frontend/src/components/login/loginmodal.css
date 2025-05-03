@@ -1,0 +1,111 @@
+/* LoginModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: max(400px, 30vw);
+    box-shadow: 0 4px 6px rgba(252, 252, 252, 0.2);
+    text-align: center;
+    /* animation part */
+    animation: popupAnimation 0.4s ease forwards;
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  @keyframes popupAnimation {
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin: 15px 0;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+
+
+  .checkbox-group {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  
+  .checkbox {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .checkbox-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .toggle-form {
+    margin-top: 10px;
+  }
+  
+  .toggle-form span {
+    color: #007BFF;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,17 @@
+.food-display-container{
+    margin: 0 10%;
+}
+
+
+
+.food-display-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  

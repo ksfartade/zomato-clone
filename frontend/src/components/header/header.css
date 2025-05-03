@@ -1,0 +1,70 @@
+.header {
+    height: 34vw;
+    width: auto;
+    margin: 30px 10%;
+    background: url('../../../public/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+  
+  .header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 50%;
+    bottom: 10%;
+    left: 2%;
+    gap: 1vw;
+    animation: fadeIn 3s;
+  }
+  
+  .header-content h2 {
+    font-size: max(4.5vw, 22px);
+    color: #ffffff;
+    font-weight: 500;
+    font-weight: bold;
+  }
+
+  .header-content p{
+    font-size: max(1vw, 12px);
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .view-menu-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 1vw 3vw;
+    font-size: max(0.5vw, 14px);
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .view-menu-button:hover {
+    background-color: #f3bcbb;
+  }
+  
+
+  @media (max-width: 1050px) {
+    .header {
+      height: 35vw;
+    }
+
+  
+    .header-content h2 {
+      font-size: max(3vw, 22px);
+    }
+  
+    .header-content p {
+      font-size: max(1vw, 6px);
+    }
+  
+    .view-menu-button {
+      padding: 1vw 3vw;
+      font-size: max(0.5vw, 8px);
+    }
+  }
